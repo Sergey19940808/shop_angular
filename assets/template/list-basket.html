@@ -1,0 +1,19 @@
+<section class="app" ng-controller="basketListCtrl">
+    <header class="header">
+        Список добавленных товаров:
+    </header>
+    <span class="notification hide">Вы пока не добавили товары в корзину</span>
+    <ul class="list-phones">
+        <li class="phone" ng-repeat="phone in basketPhones">
+            <p class="phone__name">
+                Название: {{phone.name}}
+                <span class="phone__button-remove" ng-click="removePhoneBasket(phone)">
+                </span>
+            </p>
+            <img class="phone__img" width='200' ng-src="{{phone.img}}" />       
+            <p class="phone__price">
+                Цена: {{phone.price}}
+            </p>           
+        </li>
+    </ul>
+</section>

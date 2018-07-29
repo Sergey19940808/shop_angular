@@ -1,0 +1,20 @@
+<section class="app" ng-controller="phoneListCtrl">
+    <header class="header">
+        Список телефонов:
+    </header>
+    <span class="notification hide" >Вы уже добавляли этот товар</span>
+    <ul class="list-phones">
+        <li class="phone" ng-repeat="phone in phones">
+            <p class="phone__name">
+                Название: {{phone.name}}
+                <span class="phone__button-add" ng-click="addPhone(phone.name)">
+                </span>
+            </p>
+            <img class="phone__img" width='200' ng-src="{{phone.img}}" />       
+            <p class="phone__price">
+                Цена: {{phone.price}}
+            </p>
+                        
+        </li>
+    </ul>
+</section>

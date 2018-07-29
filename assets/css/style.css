@@ -1,0 +1,60 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: FontAwesome;
+    color: #2c3b3e;
+}
+.app {
+    display: grid;
+    justify-items: center;
+    padding: 7.12em 0 0 0.5em;
+}
+.nav {
+    height: 50px;
+    background-color: #778899;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.nav__link {
+    text-decoration: none;
+    color: #2c3b3e;
+    font-size: 1.3em;
+    padding: 0 1em 0 0;
+    cursor: pointer;
+}
+.nav__link:hover {
+    color: #4c3b3e;
+}
+.header {
+    font-size: 1.5em;
+}
+.list-phones {
+    padding: 2.8em;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.phone {
+    list-style-type: none;
+    padding: 0.5em;
+}
+.phone__button-add:after {
+    content: '\f067';
+    padding: 0 0 0 2.5em;
+    cursor: pointer;
+}
+.phone__button-remove:after {
+    content: '\f00d';
+    padding: 0 0 0 2.5em;
+    cursor: pointer;
+}
+.hide {
+    display: none;
+}
+.notification {
+    padding: 2em 0 0 0;
+}

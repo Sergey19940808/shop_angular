@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Shop Phone</title>
+    <link rel="shortcut icon" href="/assets/img/favicon.png">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/font-awesome.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.10/angular.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.10/angular-route.js"></script>
+</head>
+<body ng-app="phoneShop">
+
+    <noscript>
+        You need to enable JavaScript to run this app.
+    </noscript>
+    <nav class="nav">
+        <a href="#!" class="nav__link">
+            Главная
+        </a>
+        <a href="#!basket" class="nav__link">
+            Корзина
+        </a>
+    </nav>
+    
+    <div ng-view></div>
+
+    <script src="/assets/js/index.js"></script>
+
+</body>
+</html>
